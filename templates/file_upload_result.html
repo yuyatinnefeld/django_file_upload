@@ -5,6 +5,22 @@
 <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.
 </p></br>
 
-{{ upload_info }}
+
+<table class="table">
+  <thead>
+    <tr>
+    <th scope="col">#</th>
+    <th scope="col">Value</th>
+    {% for key, value in csv_info.items %}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{ key }}</th>
+      <td>{{ value }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 {% endblock content %}
