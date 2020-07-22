@@ -126,5 +126,9 @@ STATICFILES_DIRS = [
 os.path.join(BASE_DIR,'static'),
 ]
 
+#media folder for file_upload function
+MEDIA_ROOT = 'media'
+MEDIA_URL ='/media/'
+
 ALLOWED_HOSTS = ['*']
 X_FRAME_OPTIONS = '*'

@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from home.views import myView, getformView, postformView
+from home.views import myView
 from file_upload.views import fileUploadView, fileUploadRun
 
 
@@ -24,8 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', myView),
     path('home/', myView),
-    path('getform/', getformView),
-    path('postform/', postformView),
     path('file_upload/', fileUploadView),
     path('file_upload_result/', fileUploadRun),
 
