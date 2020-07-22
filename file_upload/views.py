@@ -13,8 +13,6 @@ def fileUploadRun(request):
         #save the uploaded file in the media forder
         fs = FileSystemStorage()
         fs.save(uploaded_filename, uploaded_file)
-
-        ###HIER DU MUSS WAS MACHEN!!!!!
         csv = f"./media/{uploaded_filename}"
         df = pd.read_csv(csv)
         print(df(2))
