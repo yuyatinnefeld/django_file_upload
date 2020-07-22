@@ -1,12 +1,10 @@
 {% extends "index.html" %}
 
 {% block content %}
-<h1 class="mt-4">FILE UPLOAD</h1>
+<h1 class="mt-4">FILE UPLOAD RESULT</h1>
 <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.
 </p></br>
 
-   <form enctype = "multipart/form-data" action = "/file_upload_result/" method = "POST">{% csrf_token %}
-   <p>File: <input type = "file" name = "filename" /></p>
-   <p><input type = "submit" value = "Upload" /></p>
+{{ upload_info }}
 
 {% endblock content %}

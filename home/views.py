@@ -14,7 +14,3 @@ def getformView(request):
 
 def postformView(request):
   return render(request,'test_postform.html')
-
-
-def fileuploadView(request):
-  return render(request,'file_upload.html')
